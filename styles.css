@@ -93,6 +93,7 @@ h1 {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: #eee1d5;
     grid-row: 1 / span 4;
+    padding: 8px;
     
 
 }
