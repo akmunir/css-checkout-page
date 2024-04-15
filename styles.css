@@ -1,6 +1,10 @@
 body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     margin:0;
     padding:0;
+    background-color: #eff0ef
 }
 .header {
     display: flex;
@@ -20,3 +24,58 @@ h1 {
     color: #fbf2c0;
     font-size: smaller;
 }
+
+.purchase {
+    color: #535c4a;
+    display: grid;
+    grid-template-areas: "subtotal . " "tax . " "total . ";
+    gap: 5px;
+    justify-content: center;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.subtotal {
+    grid-area: subtotal;
+}
+
+.total {
+    grid-area: total;
+}
+
+.tax {
+    grid-area: tax;
+}
+.cost, .total-price {
+    margin-left: 150px;
+}
+
+.total-price {
+    font-weight: bold;
+}
+
+button {
+    color: #5d5b41;
+    display: flex;
+    background-color: #deb993;
+    border-radius: 30px;
+    width: 95%;
+    height: 40px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    align-items: center;
+    border: none;
+    align-self: flex-end;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    gap: 30px;
+}
+
