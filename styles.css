@@ -56,7 +56,7 @@ h1 {
 .total-price {
     font-weight: bold;
 }
-.name-input {
+.name-input, .card-info, .ccv-number {
     box-sizing: border-box;
     background-color: #eee1d5;
     border-color: #9c734d;
@@ -66,8 +66,16 @@ h1 {
     width: 90%;
     padding: 12px 20px;
     margin: 8px 0px;
+}
+
+.ccv-number {
+    
+    width: 25%;
+    margin-right: auto;
+    margin-left: 5%;
     
 }
+
 
 .content {
     margin-top: 30px;
@@ -79,7 +87,7 @@ h1 {
     row-gap: 20px;
     
 }
-.items-container {
+.items-grid-container {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: #eee1d5;
     grid-row: 1 / span 4;
@@ -127,11 +135,64 @@ button {
     font-size: smaller;
     color: #f37500;
     font-weight:normal;
+    margin-left: 1em;
 }
 
 .input-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
+
+.items-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px;
+    border-bottom: 2px ridge #ddb48c;
+    
+}
+.quantity {
+    margin-left: 1em;
+    font-size: smaller;
+}
+.price {
+    margin-left: auto;
+    margin-right: 5%;;
+    
+}
+
+.item-type, .item-info {
+    margin-left: 15%
+}
+
+.item-info {
+    font-size: smaller;
+    color: #9c734d;
+    width: 100%;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-label, .card-label, .ccv-label {
+    background-color: #eee1d5;
+    color: #f37500;
+    font-size: 11px;
+    position: absolute;
+    left: 1%;
+    margin-left: 10%;
+    padding: 0 2px;
+    
+}
+
+.ccv-label {
+    margin-top: 12%;
+}
+
+
+
 
 
