@@ -1,0 +1,22 @@
+body {
+    margin:0;
+    padding:0;
+}
+.header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #43281c;
+    padding: 16px;
+    margin: 0;
+}
+
+.logo {
+    height: 30px;
+}
+
+h1 {
+    color: #fbf2c0;
+    font-size: smaller;
+}
